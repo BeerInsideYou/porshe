@@ -1,0 +1,120 @@
+@font-face {
+	font-family: 'exoTim'; 
+	src: url(../fonts/ofont.ru_Exo\ 2\ Thin.ttf); 
+}
+@font-face {
+	font-family: 'porshe'; 
+	src: url(../fonts/ofont.ru_Porsche\ \(1\).ttf); 
+}
+body {
+    background-color: #121212;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 50px;
+}
+.menu {
+    display: block;
+    height: 26px;
+    width: 32px;
+    top: 17px;
+    left: 20px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.line {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: #4b4a37;
+}
+.menu-items {
+    padding-top: 120px;
+    box-shadow: inset 0 0 2000px rgba(75, 74, 55, .9);
+    height: 100vh;
+    width: 100%;
+    transform: translate(-150%);
+    display: flex;
+    flex-direction: column;
+    margin-left: -40px;
+    padding-left: 50px;
+    transition: transform 0.5s ease-in-out;
+    text-align: center;
+}
+.intro {
+    height: 890px;
+}
+.intro__logo {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+.intro__mashine {
+    position: absolute;
+    left: 370px;
+    top: 115px; 
+}
+.intro__obv {
+    position: absolute;
+    left: -45px;
+    top: -48px;
+}
+
+.idea__content {
+    text-align: right;
+    max-width: 650px;
+    margin-left: 700px;
+}
+.idea__title {
+    font-family: 'exoTim';
+    font-size: 120px;
+    color: #eaead9;
+    line-height: 0.5;
+}
+.idea__title span {
+    font-family: 'porshe';
+    font-size: 50px;
+    color: #d1d195;
+    
+}
+.idea__text {
+    font-family: 'exoTim';
+    max-width: 550px;
+    font-size: 16px;
+    color: #d3d3d0;
+    padding-left: 220px;
+    text-align: justify;
+    margin-top: 30px;
+}
+
+
+.idea__machine {
+    position: absolute;
+    left: 0;
+    top: 50px;
+    width: 60%;
+}
+.idea__sidenya {
+    position: absolute;
+    left: 240px;
+    top: -110px;
+    width: 27%;
+    animation-name: opas;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes opas {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
