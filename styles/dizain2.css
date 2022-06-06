@@ -1,0 +1,553 @@
+@font-face {
+	font-family: 'exoTim'; 
+	src: url(../fonts/ofont.ru_Exo\ 2\ Thin.ttf); 
+}
+@font-face {
+	font-family: 'porshe'; 
+	src: url(../fonts/porshe.ttf); 
+}
+body {
+    background-color: #121212;
+    overflow-x: hidden;
+    
+}
+.intro {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+.intro__inner {
+    position: relative;
+    height: 100vh;
+    
+}
+.intro__img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 4;
+    width: 100%;
+    height: 100%;
+}
+.intro__imgSloy {
+    position: absolute;
+    left: 34%;
+    top: 100px;
+    z-index: 5;
+}
+.intro__content {
+    font-family: 'exoTim';
+    position: absolute;
+    left: 0%;
+    top: 25%;
+    z-index: 5;
+    padding-left: 20px;
+}
+.intro__title {
+    display: flex;
+    line-height: 2px;
+    align-items: center
+}
+.intro__title h2 {
+    font-size: 110px;
+    color: #e2e2c8;
+}
+.intro__title span {
+    color: #d1ce89;
+    font-size: 48px;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-bottom: 30px;
+}
+.intro__text {
+    font-size: 18px;
+    color: #f2f2f2;
+    max-width: 320px;
+    line-height: 1.5;
+    margin-top: 45px;
+    margin-left: 5px;
+}
+.svet {
+    height: 100vh;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.svet__img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.svet__tilte {
+    font-family: 'porshe';
+    font-size: 60px;
+    color: #d1ce89;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    position: absolute;
+    top: 220px;
+    left: 0;
+    padding-left: 20px;
+}
+.svet__tilte span {
+    font-size: 63px;
+    display: block;
+    margin-left: 300px;
+}
+.svet__cvet {
+    position: absolute;
+    right: 150px;
+    bottom: 200px;
+    cursor: pointer;
+    opacity: .4;
+    transition: all .3s linear;
+}
+.svet__cvet:hover {
+    opacity: 1;
+}
+.salon {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+.salon .svet__salon {
+    height: 100%;
+}
+.salon .container {
+    height: 100%;
+}
+.salon img {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.salon__content {
+    position: absolute;
+    right: 0;
+    top: 30%;
+}
+.svet__salon {
+    font-family: 'exoTim';
+    font-size: 80px;
+    color: #e6e6cf;
+    text-transform: uppercase;
+    letter-spacing: 14px;
+    text-align: right;
+    line-height: 1.8;
+    font-weight: 600;
+}
+.svet__salon span {
+    display: block;
+    font-size: 44px;
+    font-family: 'porshe';
+    color: #e1e29e;
+    letter-spacing: 2px;
+    margin-right: 15px;
+    line-height: 0;
+}
+.salon__text {
+    font-family: 'exoTim';
+    font-size: 18px;
+    color: #e0e0d9;
+    max-width: 300px;
+    text-align: justify;
+    letter-spacing: 2px;
+    text-transform: none;
+    line-height: 1;
+    padding-left: 75px;
+    margin-top: 30px;
+    font-weight: normal;
+}
+.salonAvto {
+    height: 100vh;
+    width: 100%;
+}
+.salonAvto .swiper {
+    height: 100%;
+    width: 100%;
+}
+.salonAvto .swiper-slide {
+    padding: 0;
+    margin-bottom: 0;
+}
+.salonAvto .img {
+    width: 100%;
+    height: 100%;
+}
+.salonAvto .swiper-button-next:after {
+    padding-left:500px;
+}
+.salonAvto__inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-image: url(../img/foneSlide.png);
+    background-size: 100% 100%;
+    background-origin: content-box;
+    background-clip: content-box;
+}
+.salonAvto__title {
+    padding: 180px 0 0 150px;
+    font-family: 'porshe';
+    text-transform: uppercase;
+    color: #9b9b76;
+    font-weight: 600;
+    font-size: 50px;
+    max-width: 600px;
+}
+.salonAvto__text {
+    font-family: 'exoTim';
+    font-size: 16px;
+    color: #f6f6f6;
+    max-width: 240px;
+    text-align: justify;
+    padding: 10px 0 0 150px;
+}
+.salonAvto__inner2 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-image: url(../img/foneSlide2.png);
+    background-size: 100% 100%;
+    background-origin: content-box;
+    background-clip: content-box;
+}
+
+.krest__inner{
+    width:40px;
+    height:40px;
+    background-color:#969670;
+    position:relative;
+    border-radius:50%;
+    cursor: pointer;
+}
+
+.krest {
+    position: absolute;
+    left: 5%;
+    top: 25%;
+    z-index: 20;
+    height: 500px;
+    width: 790px;
+}
+.krest__content {
+    position: relative;
+    z-index: 30;
+    display: none;
+    height: 100%;
+    width: 100%;
+}
+.krest__content img {
+    position: absolute;
+    left: 65px;
+    top: 10px;
+}
+.krest__text {
+    position: absolute;
+    left: 60px;
+    bottom: 50px;
+    font-size: 18px;
+    text-transform: none;
+    color: #c4c87e;
+    font-family: 'exoTim';
+    text-align: left;
+    letter-spacing: 2px;
+}
+.krest:before,.krest:after{
+    content:'';
+    position:absolute;
+    width:30px;
+    height:3px;
+    background-color:#20201f;
+    border-radius:2px;
+    top:16px;
+    z-index: 10;
+}
+
+.krest:before{
+    -webkit-transform:rotate(90deg);
+    -moz-transform:rotate(90deg);
+    transform:rotate(90deg);
+    left: 6px;
+    top: 18px;
+}
+.krest:after{
+    left: 6px;
+    top: 18px;
+}
+
+.krest2 {
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    cursor: pointer;
+    z-index: 20;
+    height: 500px;
+    width: 790px;
+}
+.krest2:before,.krest2:after{
+    content:'';
+    position:absolute;
+    width:30px;
+    height:3px;
+    background-color:#20201f;
+    border-radius:2px;
+    top:16px;
+    z-index: 10;
+}
+
+.krest2:before{
+    -webkit-transform:rotate(90deg);
+    -moz-transform:rotate(90deg);
+    transform:rotate(90deg);
+    left: 6px;
+    top: 18px;
+}
+.krest2:after{
+    left: 6px;
+    top: 18px;
+}
+.krest3 {
+    position: absolute;
+    left: 60%;
+    bottom: 0%;
+    cursor: pointer;
+    z-index: 20;
+    height: 500px;
+    width: 790px;
+}
+.krest3:before,.krest3:after{
+    content:'';
+    position:absolute;
+    width:30px;
+    height:3px;
+    background-color:#20201f;
+    border-radius:2px;
+    top:16px;
+    z-index: 10;
+}
+
+.krest3:before{
+    -webkit-transform:rotate(90deg);
+    -moz-transform:rotate(90deg);
+    transform:rotate(90deg);
+    left: 6px;
+    top: 18px;
+}
+.krest3:after{
+    left: 6px;
+    top: 18px;
+}
+.krest__text2 {
+    position: absolute;
+    left: 60px;
+    bottom: 80px;
+    font-size: 18px;
+    text-transform: none;
+    color: #c4c87e;
+    font-family: 'exoTim';
+    text-align: left;
+    letter-spacing: 2px;
+}
+.krest__text3 {
+    position: absolute;
+    left: 75px;
+    bottom: 90px;
+    font-size: 18px;
+    text-transform: none;
+    color: #c4c87e;
+    font-family: 'exoTim';
+    text-align: left;
+    letter-spacing: 2px;
+}
+.krest__content img {
+    width: 70%;
+}
+
+
+.spImg {
+    width: 100%;
+    height: 100%;
+}
+.svet__inner2 {
+    display: none;
+}
+.svet__cvet2 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+}
+.svet__tilte2 {
+    font-size: 100px;
+    color: #fbf9e1;
+    font-family: 'exoTim';
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.container2 {
+    display: flex;
+    justify-content: center;
+    padding-top: 250px;
+    padding-right: 140px;
+}
+.svet__tilte2 span {
+    font-size: 50px;
+    color: #f0ef95;
+    font-family: 'porshe';
+    display: block;
+    letter-spacing: 3px;
+}
+.svet__text {
+    font-size: 16px;
+    font-family: 'exoTim';
+    color: #ffffff;
+    max-width: 270px;
+    margin-top:40px;
+    margin-left: 30px;
+}
+.svet__changes {
+    display: flex;
+    position: absolute;
+    left: 350px;
+    bottom: 100px;
+}
+.svet__changes-items {
+    display: flex;
+    margin-right:80px;
+}
+.svet__changes-item {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #f8f8f8;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.svet__changes-item.b {
+    background-color: #2c2d2d;
+}
+.svet__changes-item.r {
+    background-color: #7c1d31;
+}
+.svet__changes-item.z {
+    background-color: #6d785d;
+}
+.svet__changes-item.k {
+    background-color: #6e6651;
+}
+.svet__changes-item.s {
+    background-color: #9c9c9c;
+}
+.svet__changes-item.o {
+    background-color: #c5862d;
+}
+.svet__changes-item.l {
+    background-color: #6d3134;
+}
+
+@media (max-width: 1600px) { 
+    .container2 {
+        padding-top: 230px;
+        padding-right: 140px;
+    }
+    .krest {
+        left: 300px;
+    }
+    .krest2 {
+        left: 950px;
+    }
+    .krest3 {
+        left: 1100px;
+    }
+    .krest__content img {
+        width: 50%;
+        left: -392px;
+    }
+    .krest__text {
+        bottom: 88px;
+        max-width: 456px;
+    }
+    .krest__content .im1 {
+        left: 65px;
+    }
+    .krest__text2 {
+        left: -393px;
+        bottom: 153px;
+        max-width: 436px;
+    }
+    .krest__text3 {
+        left: -389px;
+        bottom: 174px;
+        max-width: 450px;
+    }
+        
+}
+@media (max-width: 1500px) { 
+    .salon .img {
+        width: 1230px;
+        height: 100%;
+    }
+    .krest {
+        left: 125px;
+    }
+    .krest2 {
+        left: 690px;
+    }
+    .krest3 {
+        left: 869px;
+    }    
+}
+@media (max-width: 1409px) { 
+    .container2 {
+        padding-top: 230px;
+        padding-right: 20px;
+    }
+    .svet__tilte2 {
+        font-size: 80px;
+    }
+}
+@media (max-width: 1320px) { 
+    .salon .img {
+        width: 1030px;
+        height: 100%;
+    }
+    .krest {
+        left: 125px;
+    }
+    .krest2 {
+        left: 599px;
+    }
+    .krest3 {
+        left: 710px;
+    }
+    .salon__text {
+        font-size: 16px;
+    }
+    .svet__salon span {
+        font-size: 32px;
+    }
+    .svet__salon {
+        font-size: 60px;
+    }
+@media (max-width: 1300px) { 
+    .container2 {
+        padding-top: 230px;
+        padding-right: 0px;
+    }
+    .svet__tilte2 {
+        font-size: 60px;
+    }
+    .svet__changes {
+        left: 120px;
+    }
+    .svet__text {
+        font-size: 14px;
+        max-width: 215px;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+}

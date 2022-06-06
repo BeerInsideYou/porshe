@@ -1,4 +1,38 @@
 .swiper {
-    width: 600px;
-    height: 300px;
-  }
+    width: 100%;
+    height: 500px;
+}
+.swiper-slide {
+  padding: 0 10px
+}
+.swiper-slide {
+  padding: 10px 0;
+  margin-bottom: 160px;
+}
+.swiper-pagination {
+  
+}
+.swiper-pagination-bullet {
+  --swiper-theme-color: #aeae73;
+  background: #aeae73
+}
+.features .swiper-pagination {
+  opacity: 0;
+}
+.swiper-button-next {
+  margin-right: 280px;
+  margin-top: 0px;
+}
+.swiper-button-next:after {
+  color: #76775c;
+}
+.salonAvto .swiper-button-next:after, .swiper-button-prev:after {
+  color: #76775c;
+  font-size: 100px;
+}
+.salonAvto .swiper-button-prev:after {
+  margin-left: 50px;
+}
+.salonAvto .swiper-scrollbar, .swiper-pagination{
+  display: block;
+}

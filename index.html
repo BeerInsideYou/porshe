@@ -9,35 +9,158 @@
     <link rel="stylesheet" href="./styles/glav.css">
     <link rel="stylesheet" href="./styles/container.css">
     <link rel="stylesheet" href="./styles/resset.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/header.css">
     <title>Porshe</title>
 </head>
 <body>
     <header class="header">
-        <div class="logo"><img src="./img/logoPorsh.png" alt="LOGO"></div>
-        <nav class="menu">
-            <span class="line line1"></span>
-            <span class="line line2"></span>
-            <span class="line line3"></span>
-        </nav> 
+        <div class="header__inner">
+            <div class="logo"><img src="./img/logoPorsh.png" alt="LOGO"></div>
+            <div class="hamburger-menu">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                  <span></span>
+                </label>
+            
+                <ul class="menu__box">
+                  <li><a class="menu__item" href="#">Главная</a></li>
+                  <li><a class="menu__item" href="#">Дизайн</a></li>
+                  <li><a class="menu__item" href="#">Характеристики</a></li>
+                </ul>
+            </div>
+        </div>
     </header>
 
     <section class="intro">
-        
+        <h2 class="intro__title">PANAMERA</h2>
+        <img src="./img/fullMashine.png" alt="" class="intro__mashine">
+        <img src="./img/FoneForPanamera.png" alt="" class="into__fone">
     </section>
 
     <section class="idea">
         <div class="container">
-            <div class="idea__inner">
-                <img class="idea__machine" src="./img/machine2.png" alt="">
-                <img class="idea__sidenya" src="./img/sidenya.png" alt="">
-                <div class="idea__content">
-                    <div class="idea__title">ИДЕЯ <span>PANAMERA</span></div>
-                    <div class="idea__text">Данная модель является уникальной линейкой автомобилей среди всех спорткаров. PORSCHE решили воплотить в жизнь свою идею, а именно, создать  спортивный пятидверный сидан, которым является Panamera.</div>
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <div class="idea__inner">
+                        <img class="idea__machine" src="./img/machine2.png" alt="">
+                        <img class="idea__sidenya" src="./img/sidenya.png" alt="">
+                        <div class="idea__content">
+                            <div class="idea__title">ИДЕЯ <span>PANAMERA</span></div>
+                            <div class="idea__text">Данная модель является уникальной линейкой автомобилей среди всех спорткаров. PORSCHE решили воплотить в жизнь свою идею, а именно, создать спортивный пятидверный сидан, которым является Panamera.</div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                      <div class="idea__inner">
+                        <img src="./img/salone3.png" alt="" class="idea__salane">
+                        <div class="idea__content2">
+                            <div class="idea__title2">Невозможно – говорили многие. Смело – утверждали другие.</div>
+                            <div class="idea__text2">Данный спорткар имеет внушительный объем  салона, он спокойно вмещает 566 килограмм, что является максимальной полезной нагрузкой для PANAMERA. 
+                                А максимальная допустимая общая масса - 2515 килограм. Удивительно то, что при таких допустимых показателях машина прекрасно чувствует дорогу и сохраняет свою скорость, не принося дискомфорта водителю и пассажирам.</div>
+                        </div>
+                      </div>
+                  </div>
                 </div>
+                
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <div class="features__inner">
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide">
+                        <img class="features__img" src="./img/mashine3.png" alt="">
+                        <div class="features__title">Особенности</div>
+                        <div class="features__suptitle">новое поколение шин</div>
+                        <div class="features__text">Подвестка  с новыми настройками и новое поколение 20-21-дюймовых шин позволяют получить комфорт от поездки. </div>
+                        <div class="features__content">
+                            <div class="features__content-text">Плавность хода:</div>
+                            <div class="features__imgs">
+                                <div class="features__imgs-item">
+                                    <img src="./img/koleso.png" alt="">
+                                    <img src="./img/volna1.png" alt="">
+                                    <div class="features__imgs-text"><span>13</span>дюймов</div>
+                                </div>
+                                <div class="features__imgs-item">
+                                    <img src="./img/koleso.png" alt="">
+                                    <img src="./img/volna2.png" alt="">
+                                    <div class="features__imgs-text"><span>20</span>дюймов</div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="features__img" src="./img/mashine3.png" alt="">
+                        <div class="features__title">Особенности</div>
+                        <div class="features__suptitle">системы помощи</div>
+                        <div class="features__text">Сделать поездку более комфортной и безопасной помогают системы помощи водителю. Производители наделяют Porsche всеми  цифровыми возможностями сегодняшнего и завтрашнего дня. </div>
+                        <div class="features__content">
+                            <div class="features__imgs2">
+                                <div class="features__imgs-item2">
+                                    <div class="features__imgs-text2">
+                                        <span>1.Система ночного видения</span>
+                                        <span>2.Система выезда с парковки</span>
+                                        <span>3.Система круизного обзора</span>
+                                        <span>4.Контроль слепых зон</span>
+                                        <span>5.Адаптивный круиз-контроль</span>
+                                        </div>
+                                    <img src="./img/migalka.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide">
+                        <img class="features__img" src="./img/mashine3.png" alt="">
+                        <div class="features__title">Особенности</div>
+                        <div class="features__suptitle">porsche inno-drive</div>
+                        <div class="features__text">Данная функция дополняет функции круиз-контроля. Делает поездку более спортивной, конфортабельной, экономичной.</div>
+                        <div class="features__content">
+                            <div class="features__imgs3">
+                                <div class="features__imgs-item3">
+                                    <img src="./img/rule.png" alt="">
+                                    <div class="features__imgs-text3">InnoDrive самостоятельно определит расстояние до препятствия и, при возможности, перестроится в свободную полосу. </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <div class="swiper-button-next"></div>
+                  </div>
             </div>
         </div>
     </section>
 
+    <footer class="footer">
+        <div class="footer__inner">
+            <nav class="nav">
+                <a href="#" class="nav__link">Главная</a>
+                <a href="#" class="nav__link">Дизайн</a>
+                <a href="#" class="nav__link">Характеристики</a>
+            </nav>
+            <img src="./img/logoPorsh.png" alt="logo" class="img">
+            <div class="social">
+                <a href="#" class="social__item"><img src="./img/youtube.png" alt=""></a>
+                <a href="#" class="social__item"><img src="./img/twitter.png" alt=""></a>
+                <a href="#" class="social__item"><img src="./img/inst.png" alt=""></a>
+            </div>
+        </div>
+    </footer>
 </body>
 
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./styles/resset.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/container.css">
+    <link rel="stylesheet" href="./styles/swiper.css">
+    <link rel="stylesheet" href="./styles/style3.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__inner">
+            <div class="logo"><img src="./img/logoPorsh.png" alt="LOGO"></div>
+            <div class="hamburger-menu">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                  <span></span>
+                </label>
+            
+                <ul class="menu__box">
+                  <li><a class="menu__item" href="#">Главная</a></li>
+                  <li><a class="menu__item" href="#">Дизайн</a></li>
+                  <li><a class="menu__item" href="#">Характеристики</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section class="intro">
+        <div class="container">
+            <div class="intro__inner">
+                <h3 class="intro__title">porshe panamera</h3>
+                <div class="intro__power">243 кВт/330 л.с. <span>Мощность (кВт)/Мощность (л.с.)</span></div>
+                <div class="intro__speed">270 км/ч<span>Максимальная скорость</span></div>
+                <div class="intro__time">5,6 сек <span>Разгон 0-100 км/ч</span></div>
+                <div class="intro__pichers">
+                    <div class="intro__pichers-item">
+                        <img src="./img/benz.png" alt="">
+                        <div class="intro__pichers-text">9,2 л/100км
+                        </div>
+                    </div>
+                    <div class="intro__pichers-item">
+                        <img src="./img/co2.png" alt="">
+                        <div class="intro__pichers-text">209 г/км</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="haracteristik">
+        <h2 class="haracteristik__title">Характеристики</h2>
+        <img src="./img/mashine4.png" alt="" class="haracteristik__img">
+        <div class="haracteristik__inner">
+            <div class="haracteristik__left">
+                <div class="haracteristik__left-item">
+                    <img src="./img/rule.png" alt="">
+                    <div class="haracteristik__left-text">В полной мере расслабиться в поездке Вам поможет наша система «Автопилот».
+                         Настройте свой ритм жизни!</div>
+                </div>
+                <div class="haracteristik__left-item">
+                    <img src="./img/turbine.png" alt="">
+                    <div class="haracteristik__left-text">Новое поколение турбин лучше справляется с фильтрованием воздуха в двигателе. Облегчайте работу мотора.</div>
+                </div>
+                <div class="haracteristik__left-item">
+                    <img src="./img/motor.png" alt="">
+                    <div class="haracteristik__left-text">Выбор двигателя зависит от вас. PORSCHE  предлагают  двигатели V6, V8. Количество лошадей варьируется от 250 до 340.</div>
+                </div>
+            </div>
+            <div class="haracteristik__right">
+                <div class="haracteristik__right-text">
+                    Модель Panamera  рождена из симбиоза страстности и энтузиазма. Этот автомобиль представляет собой идеальную комбинацию привычных функций
+                    <span>Кузов полностью оцинкованный легкосплавный кузов с алюминиевыми и стальными элементами</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="3d">
+        <div class="slider_3d">
+            <div
+              onmouseout="onBlurPrev()"
+              onmouseover="onFocusPrev()"
+              class="pointer"
+            >
+              <
+            </div>
+            <div>
+              <div class="slider_wrapper">
+                <img id="slider_img" class="slider_img" src="./img/mash/01.png" />
+              </div>
+            </div>
+            <div
+              class="pointer"
+              onmouseover="onFocusNext()"
+              onmouseout="onBlurNext()"
+            >
+              >
+            </div>
+          </div>
+    </section>
+
+    <section class="video">
+
+    </section>
+
+
+    <footer class="footer">
+        <div class="footer__inner">
+            <nav class="nav">
+                <a href="#" class="nav__link">Главная</a>
+                <a href="#" class="nav__link">Дизайн</a>
+                <a href="#" class="nav__link">Характеристики</a>
+            </nav>
+            <img src="./img/logoPorsh.png" alt="logo" class="img">
+            <div class="social">
+                <a href="#" class="social__item"><img src="./img/youtube.png" alt=""></a>
+                <a href="#" class="social__item"><img src="./img/twitter.png" alt=""></a>
+                <a href="#" class="social__item"><img src="./img/inst.png" alt=""></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script src="./slider.js"></script>
+</html>
