@@ -20,8 +20,7 @@
   opacity: 0;
 }
 .swiper-button-next {
-  margin-right: 280px;
-  margin-top: 0px;
+  margin-top: -20px;
 }
 .swiper-button-next:after {
   color: #76775c;
