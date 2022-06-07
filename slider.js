@@ -51,3 +51,13 @@ const onFocusPrev = () => {
 const onBlurPrev = () => {
   clearInterval(interval);
 };
+
+const clouse = document.querySelector('.clouse');
+const box = document.querySelector('.intro__box');
+const title = document.querySelector('.intro__title')
+clouse.addEventListener('click', () => {
+  box.style.display = 'none'
+})
+title.addEventListener('click', () => {
+  box.style.display = 'block'
+})

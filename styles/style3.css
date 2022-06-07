@@ -22,6 +22,33 @@ body {
 .intro__inner {
     padding-top: 200px;
 }
+.intro__box {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.732);
+    position: relative;
+    z-index: 900;
+    display: none;
+}
+.clouse {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    cursor: pointer;
+    z-index: 1070;
+}
+.intro__box-inner {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    z-index: 1000;
+    width: 1100px;
+}
+.intro__box-inner video{
+    width: 100%;
+}
 .intro__title {
     font-family: 'porshe'; 
     text-transform: uppercase;
@@ -30,6 +57,18 @@ body {
     font-weight: 600;
     max-width: 350px;
     letter-spacing: 5px;
+    cursor: pointer;
+    position: relative;
+}
+.intro__title::after {
+    content: '';
+    width: 45px;
+    height: 50px;
+    background: url('../img/play.png');
+    position: absolute;
+    right: -200px;
+    top: 10px;
+
 }
 .intro__power {
     font-family: 'exoTim'; 
@@ -137,9 +176,14 @@ body {
     left: 44%;
     top: 11%;
 }
-.slider_3d {
+.slider3d {
+    width: 100%;
     height: 100vh;
-    width: 100vw;
+    margin: 217px 0 0 0;
+}
+.slider_3d {
+    height: 100%;
+    width: 100%;
     background: rgb(55,54,53);
     background: linear-gradient(180deg, rgba(55,54,53,1) 14%, rgba(76,75,76,1) 100%);
     display: flex;
@@ -162,7 +206,34 @@ body {
     cursor: pointer;
     font-size: 40px;
   }
+  .video {
+      width: 100%;
+      height: 100vh;
+      position: relative;
+  }
+  .video video {
+    width: 100%;
+    height: 100%;
+}
+.video__content {
+    position: absolute;
+    left: 100px;
+    top: -150px;
+}
+.video__title {
+    font-size: 100px;
+    color: #e6e4cc;
+    font-family: 'exoTim';
+    text-transform: uppercase;
 
+}
+.video__suptitle {
+    font-size: 48px;
+    font-family: 'porshe';
+    text-transform: uppercase;
+    color: #bdbe84;
+
+}
   @media (max-width: 1700px) { 
     .haracteristik__right-text {
         font-family: 'exoTim';
