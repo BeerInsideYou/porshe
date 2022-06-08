@@ -106,7 +106,7 @@ body {
 }
 .intro__pichers {
     display: flex;
-    margin-top: 130px;
+    margin-top: 90px;
 }
 .intro__pichers-text {
     font-family: 'exoTim'; 
@@ -209,24 +209,25 @@ body {
   }
   .video {
       width: 100%;
-      height: 100vh;
+      height: 120vh;
       position: relative;
+      background: rgb(55,54,53);
+    background: linear-gradient(180deg,  rgba(76,75,76,1) 100%, rgba(55,54,53,1) 14%);
+    padding-bottom: 30px;
   }
   .video video {
     width: 100%;
-    height: 100%;
+    height: 80%;
 }
 .video__content {
-    position: absolute;
-    left: 100px;
-    top: -150px;
+    padding-left: 140px;
 }
 .video__title {
     font-size: 100px;
     color: #e6e4cc;
     font-family: 'exoTim';
+    font-weight: 600;
     text-transform: uppercase;
-
 }
 .video__suptitle {
     font-size: 48px;
@@ -240,6 +241,9 @@ body {
         font-family: 'exoTim';
         max-width: 310px;
     }
+    .haracteristik__img {
+        width: 500px;
+    }
 }
 
 @media (max-width: 1600px) { 
@@ -251,6 +255,25 @@ body {
         margin-left: 20px;
         max-width: 320px;
         line-height: 1.7;
+    }
+    .haracteristik__img {
+        width: 500px;
+        top: 110px;
+    }
+    .haracteristik__title {
+        font-size: 75px;
+    }
+    .haracteristik__right-text {
+        font-size: 14px;
+    }
+    .haracteristik__left-text {
+        font-size: 14px;
+    }
+    .haracteristik__inner {
+        background-color: #201f1e;
+        padding-bottom: 220px;
+        display: flex;
+        justify-content: space-between;
     }
 }
 @media (max-width: 1500px) { 
@@ -279,13 +302,13 @@ body {
 @media (max-width: 1400px) { 
     .haracteristik__right-text {
         font-family: 'exoTim';
-        max-width: 290px;
-        font-size: 16px;
+        max-width: 230px;
+        font-size: 14px;
     }
     .haracteristik__left-text {
         margin-left: 20px;
         max-width: 320px;
-        font-size: 16px;
+        font-size: 14px;
     }
     .haracteristik__img {
         position: absolute;
@@ -295,7 +318,7 @@ body {
     }
     .haracteristik__inner {
         background-color: #201f1e;
-        padding: 150px 40px 100px 50px;
+        padding: 150px 40px 210px 50px;
         display: flex;
         justify-content: space-between;
     }

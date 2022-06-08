@@ -40,6 +40,8 @@ const svetInner2 = document.querySelector('.svet__inner2');
 const resset = document.querySelector('.svet__cvet2');
 const Cvet = document.querySelectorAll('.svet__changes-item');
 const masina = document.querySelector('.cont');
+const title = document.querySelector('.svet__tilte2');
+const suptitle = document.querySelector('.svet__text')
 
 imgCvet.addEventListener('click', () => {
   svetInner.style.display = 'none';
@@ -54,6 +56,18 @@ Cvet.forEach((item, i) => {
   item.addEventListener('click', () => {
     masina.innerHTML = `
     <img src="./img/0${i}.png" alt="" class="svet__img">`
+    if (i > 0) {
+      title.innerHTML = `Стандартные <span>цвета</span>`;
+      suptitle.innerHTML = `Стандартные цвета кузова являются классикой PORSCHE и не трубуют дополнительных трат.`
+    }
+    if (i > 1) {
+      title.innerHTML = `Металлические <span>цвета</span>`;
+      suptitle.innerHTML = `Эксклюзивная линейка с металлическим отливом. Цвета придают свечение.`
+    }
+    if (i > 4) {
+      title.innerHTML = `Специальные <span>цвета</span>`;
+      suptitle.innerHTML = `Специальный набор цветов сделает ваше авто более ярким и заметным на дороге. Создавайте свой стиль.`
+    }
   })
 })
 

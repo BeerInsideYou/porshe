@@ -111,6 +111,7 @@ body {
     left: 0;
     top: 0;
     z-index: 0;
+    width: 800px;
 }
 .idea__content2 {
     padding-left: 390px;
@@ -123,9 +124,12 @@ body {
     font-size: 30px;
     max-width: 1200px;
     color: #d1ce89;
-    font-weight: 600;
+    font-weight: 700;
     letter-spacing: 4px;
-    line-height: 1.4;
+    line-height: 1.2;
+}
+.idea__title2 span {
+    font-size: 28px;
 }
 .idea__text2 {
     font-family: 'exoTim';
@@ -355,6 +359,9 @@ body {
     }
     .idea__title2 {
         font-size: 25px;
+    }
+    .idea__title2 span{
+        font-size: 18px;
     }
     .features__img {
         width: 700px;
